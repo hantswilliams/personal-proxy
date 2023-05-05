@@ -47,8 +47,8 @@ sudo ufw allow 8888/tcp
 import requests
 
 proxy = {
-  'http': 'http://your-server-address:port',
-  'https': 'https://your-server-address:port'
+  'http': 'ipaddress:port',
+  'https': 'ipaddress:port'
 }
 
 session = requests.Session()
