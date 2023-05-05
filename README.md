@@ -41,3 +41,16 @@ LogLevel Info
 sudo systemctl start tinyproxy
 sudo ufw allow 8888/tcp
 ```
+
+## then in python requests:
+```
+import requests
+
+proxy = {
+  'http': 'http://your-server-address:port',
+  'https': 'https://your-server-address:port'
+}
+
+session = requests.Session()
+session.proxies = proxy
+```
