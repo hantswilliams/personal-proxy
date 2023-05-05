@@ -25,12 +25,7 @@ sudo apt install tinyproxy
 Port 8888
 BindSame yes
 Allow 0.0.0.0/0
-   
-# Enable anonymous proxy mode to hide your IP address
-Anonymous "your_proxy_name"
-ViaProxyName "your_proxy_name"
-DisableViaHeader Yes
-   
+      
 # Forward HTTPS traffic
 ConnectPort 443
 ConnectPort 563
